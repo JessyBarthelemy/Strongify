@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Timer">
+        <attr name="circleColor" format="reference"/>
+        <attr name="circleBackColor" format="reference"/>
+        <attr name="circleStroke" format="dimension"/>
+        <attr name="circleBackground" format="reference"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="Theme">
+        <attr name="colorAccent2" format="reference"/>
+        <attr name="colorBottomNavigation" format="reference"/>
+        <attr name="colorBottomNavigationText" format="reference"/>
+        <attr name="colorSubtitle" format="reference"/>
+        <attr name="colorSeparator" format="reference"/>
+        <attr name="colorDisabled" format="reference"/>
+        <attr name="colorListItemSelected" format="reference"/>
+        <attr name="colorText" format="reference"/>
+        <attr name="colorIconImage" format="reference"/>
+        <attr name="colorImageTint" format="reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default theme-->
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#323232</color>
+    <color name="colorAccent">#d14451</color>
+    <color name="colorBackground">#ffffff</color>
+    <color name="colorAccent2">#1485CC</color>
+    <color name="colorImageTint">#00000000</color>
+    <color name="bottomNavigation">#ffffff</color>
+    <color name="bottomNavigationText">#888788</color>
+    <color name="subtitle">#bbbaba</color>
+    <color name="separator">#d4d4d4</color>
+    <color name="disabled">#e5e5e5</color>
+    <color name="listItemSelected">#F5F5F5</color>
+    <color name="colorText">#000000</color>
+    <color name="colorIcon">#d4d4d4</color>
+
+    <!-- Dark Theme -->
+
+    <color name="colorPrimaryDarkTheme">#1c1c1c</color>
+    <color name="colorPrimaryDarkDarkTheme">#333232</color>
+    <color name="colorAccentDarkTheme">#d14451</color>
+    <color name="colorBackgroundDarkTheme">#292929</color>
+    <color name="colorTextDarkTheme">#ffffff</color>
+    <color name="colorSeparatorDarkTheme">#d14451</color>
+    <color name="colorIconDarkTheme">#ffffff</color>
+    <color name="colorImageTintDarkTheme">#ffffff</color>
+
+    <color name="colorAccent2DarkTheme">#1485CC</color>
+    <color name="bottomNavigationDarkTheme">#1c1c1c</color>
+    <color name="bottomNavigationTextDarkTheme">#ffffff</color>
+    <color name="colorDisabledDarkTheme">#292929</color>
+
+    <!-- graph -->
+    <color name="graphMeasure1">@color/colorAccent</color>
+    <color name="graphMeasure2">#d98210</color>
+    <color name="graphMeasure3">#6314d9</color>
+    <color name="graphMeasure4">#08782d</color>
+    <color name="graphMeasure5">#177780</color>
+
+</resources>

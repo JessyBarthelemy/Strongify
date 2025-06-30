@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        android:id="@+id/weight_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/little_margin"
+        android:text="@string/weight" />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_delete"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/little_margin"
+        android:layout_marginEnd="@dimen/little_margin"
+        android:layout_marginRight="@dimen/little_margin"
+        android:visibility="gone"
+        app:tint="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/weight_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weight_title"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/little_margin"
+        android:layout_marginEnd="@dimen/little_margin"
+        android:hint="@string/date"
+        android:clickable="true"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:drawableStart="@drawable/ic_workout"
+        android:drawableLeft="@drawable/ic_workout"
+        android:drawablePadding="@dimen/little_margin"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/weight_mass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weight_date"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/little_margin"
+        android:layout_marginEnd="@dimen/little_margin">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/weight_mass"
+            android:inputType="numberDecimal"
+            android:drawableStart="@drawable/ic_weight"
+            android:drawableLeft="@drawable/ic_weight"
+            android:drawablePadding="@dimen/little_margin"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/weight_fat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weight_mass"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/little_margin"
+        android:layout_marginEnd="@dimen/little_margin">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/weight_fat"
+            android:inputType="numberDecimal"
+            android:drawableStart="@drawable/ic_fat"
+            android:drawableLeft="@drawable/ic_fat"
+            android:drawablePadding="@dimen/little_margin"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/weight_muscle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weight_fat"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/little_margin"
+        android:layout_marginEnd="@dimen/little_margin">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/weight_muscle"
+            android:inputType="numberDecimal"
+            android:drawableStart="@drawable/ic_muscle"
+            android:drawableLeft="@drawable/ic_muscle"
+            android:drawablePadding="@dimen/little_margin"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/weight_bones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weight_muscle"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/little_margin"
+        android:layout_marginEnd="@dimen/little_margin">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/weight_bones"
+            android:inputType="numberDecimal"
+            android:drawableStart="@drawable/ic_bone"
+            android:drawableLeft="@drawable/ic_bone"
+            android:drawablePadding="@dimen/little_margin"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/weight_update_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/weight_bones"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/little_margin"
+        android:text="@string/weight_update_warning"/>
+
+    <Button
+        android:id="@+id/weight_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/weight_update_warning"
+        android:text="@string/validate"
+        android:layout_marginTop="@dimen/little_margin"/>
+</RelativeLayout>

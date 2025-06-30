@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        tools:context=".fragment.execution.WorkoutExecutionEndFragment">
+
+        <TextView
+            android:id="@+id/end_title"
+            style="@style/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/history_total_time_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="@dimen/little_margin"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/ic_time"
+            app:tint="@color/colorAccent2"
+            app:layout_constraintBottom_toTopOf="@+id/history_exe_icon"
+            app:layout_constraintEnd_toStartOf="@+id/history_total_time"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/end_title"
+            android:contentDescription="@string/content_history_total_time_icon"/>
+
+        <TextView
+            android:id="@+id/history_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/little_margin"
+            android:layout_marginLeft="@dimen/little_margin"
+            app:layout_constraintBottom_toBottomOf="@id/history_total_time_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/history_total_time_icon"
+            app:layout_constraintTop_toTopOf="@id/history_total_time_icon" />
+
+        <ImageView
+            android:id="@+id/history_exe_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="@dimen/little_margin"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/ic_exercise"
+            app:tint="@color/colorAccent"
+            app:layout_constraintRight_toRightOf="@id/history_total_time_icon"
+            app:layout_constraintTop_toBottomOf="@id/history_total_time_icon"
+            android:contentDescription="@string/content_exercise_icon"/>
+
+        <TextView
+            android:id="@+id/history_exe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/history_exe_icon"
+            app:layout_constraintTop_toTopOf="@id/history_exe_icon"
+            app:layout_constraintLeft_toLeftOf="@id/history_total_time" />
+
+        <ImageView
+            android:id="@+id/history_reps_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="@dimen/little_margin"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:contentDescription="@string/content_set_count"
+            android:src="@drawable/ic_set"
+            app:tint="@color/colorAccent"
+            app:layout_constraintLeft_toLeftOf="@id/history_total_time_icon"
+            app:layout_constraintTop_toBottomOf="@id/history_exe_icon" />
+
+        <TextView
+            android:id="@+id/history_reps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/history_reps_icon"
+            app:layout_constraintTop_toTopOf="@id/history_reps_icon"
+            app:layout_constraintLeft_toLeftOf="@id/history_total_time"/>
+
+        <ImageView
+            android:id="@+id/history_distance_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="@dimen/little_margin"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            app:tint="@color/colorAccent"
+            app:layout_constraintLeft_toLeftOf="@id/history_total_time_icon"
+            app:layout_constraintTop_toBottomOf="@id/history_reps_icon"
+            android:contentDescription="@string/content_distance_icon"/>
+
+        <TextView
+            android:id="@+id/history_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/history_distance_icon"
+            app:layout_constraintTop_toTopOf="@id/history_distance_icon"
+            app:layout_constraintLeft_toLeftOf="@id/history_total_time"/>
+
+        <ImageView
+            android:id="@+id/history_weight_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="@dimen/little_margin"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            app:tint="@android:color/black"
+            app:layout_constraintLeft_toLeftOf="@id/history_total_time_icon"
+            app:layout_constraintTop_toBottomOf="@id/history_distance_icon"
+            android:contentDescription="@string/content_exercise_weight"/>
+
+        <TextView
+            android:id="@+id/history_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/history_weight_icon"
+            app:layout_constraintTop_toTopOf="@id/history_weight_icon"
+            app:layout_constraintLeft_toLeftOf="@id/history_total_time"/>
+
+        <TextView
+            android:id="@+id/note_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/history_weight_icon"
+            app:layout_constraintLeft_toLeftOf="@id/note"
+            android:text="@string/workout_note"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="@dimen/little_margin"
+            android:labelFor="@id/note"/>
+
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoCorrect|textMultiLine"
+            app:layout_constraintTop_toBottomOf="@id/note_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="@dimen/big_margin"
+            android:layout_marginEnd="@dimen/big_margin"
+			android:layout_marginLeft="@dimen/big_margin"
+            android:layout_marginRight="@dimen/big_margin"
+            android:contentDescription="@string/content_note"/>
+
+        <Button
+            android:id="@+id/cancel_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Button"
+            android:text="@string/ignore"
+            android:layout_marginTop="@dimen/little_margin"
+            app:layout_constraintTop_toBottomOf="@id/note"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/save_action"
+            app:layout_constraintHorizontal_chainStyle="packed"/>
+
+        <Button
+            android:id="@+id/save_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Button"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cancel_action"
+            app:layout_constraintLeft_toRightOf="@id/cancel_action"
+            android:layout_marginStart="@dimen/little_margin"
+            android:layout_marginLeft="@dimen/little_margin"
+            android:text="@string/save"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

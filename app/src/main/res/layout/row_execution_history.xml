@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/little_margin">
+
+    <TextView
+        android:id="@+id/exercise_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:labelFor="@id/set_repetition" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/exercise_title">
+        <ImageView
+            android:id="@+id/exercise_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:tint="?colorImageTint"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/set_repetition"
+            app:layout_constraintBottom_toBottomOf="@id/set_weight"
+            android:layout_marginEnd="@dimen/big_margin"
+            android:layout_marginRight="@dimen/big_margin"
+            android:contentDescription="@string/content_exercise_icon"/>
+
+        <EditText
+            android:id="@+id/set_repetition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:minWidth="30dp"
+            android:selectAllOnFocus="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/exercise_icon" />
+
+        <TextView
+            android:id="@+id/goal_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/exercise_icon"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/little_margin"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/repetition_barrier_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="set_repetition,goal_rest"
+            app:barrierDirection="top"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/repetition_barrier_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="set_repetition,goal_rest"
+            app:barrierDirection="bottom"/>
+
+        <ImageView
+            android:id="@+id/set_repetition_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:contentDescription="@string/content_set_count"
+            app:layout_constraintLeft_toRightOf="@+id/set_weight"
+            app:layout_constraintTop_toTopOf="@id/repetition_barrier_top"
+            app:layout_constraintBottom_toBottomOf="@id/repetition_barrier_bottom"/>
+
+        <TextView
+            android:id="@+id/set_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="@string/exercise_max"
+            app:layout_constraintTop_toTopOf="@id/set_repetition_icon"
+            app:layout_constraintBottom_toBottomOf="@id/set_repetition_icon"
+            app:layout_constraintLeft_toRightOf="@id/set_repetition_icon"
+            android:layout_marginStart="@dimen/little_margin"
+            android:layout_marginLeft="@dimen/little_margin"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@id/set_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:minWidth="30dp"
+            android:selectAllOnFocus="true"
+            app:layout_constraintLeft_toRightOf="@id/exercise_icon"
+            app:layout_constraintTop_toBottomOf="@id/repetition_barrier_bottom"/>
+
+        <ImageView
+            android:id="@+id/set_weight_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/content_exercise_weight"
+            app:layout_constraintLeft_toLeftOf="@id/set_repetition_icon"
+            app:layout_constraintRight_toRightOf="@id/set_repetition_icon"
+            app:layout_constraintTop_toTopOf="@id/set_weight"
+            app:layout_constraintBottom_toBottomOf="@id/set_weight"
+            app:tint="@android:color/black"
+            android:labelFor="@id/set_weight"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

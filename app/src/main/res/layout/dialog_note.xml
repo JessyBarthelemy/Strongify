@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textAutoCorrect|textMultiLine"
+        android:layout_marginStart="@dimen/little_margin"
+        android:layout_marginEnd="@dimen/little_margin"
+		android:layout_marginLeft="@dimen/little_margin"
+        android:layout_marginRight="@dimen/little_margin"/>
+</LinearLayout>

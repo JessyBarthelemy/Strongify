@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    android:minHeight="30dp">
+
+    <TextView
+        android:id="@+id/graph_description_name"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:text="@string/name"
+        android:textColor="@color/colorAccent"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/graph_description_min"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/min"
+        android:layout_weight="1"
+        android:textColor="@color/colorAccent"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/graph_description_max"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/max"
+        android:layout_weight="1"
+        android:textColor="@color/colorAccent"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/graph_description_average"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/average"
+        android:layout_weight="1"
+        android:textColor="@color/colorAccent"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/graph_description_sum"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/sum"
+        android:layout_weight="1"
+        android:textColor="@color/colorAccent"
+        android:gravity="center" />
+</LinearLayout>

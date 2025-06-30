@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+      <RelativeLayout
+          android:id="@+id/superset_wrapper"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:visibility="gone"
+          android:paddingStart="@dimen/little_margin"
+          android:paddingEnd="@dimen/little_margin"
+		  android:paddingLeft="@dimen/little_margin"
+          android:paddingRight="@dimen/little_margin"
+          android:paddingTop="3dp"
+          android:paddingBottom="3dp">
+          <TextView
+              android:id="@+id/exercise_set_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/workout_circuit"
+              android:textSize="@dimen/workout_title_size"
+              android:textColor="@color/colorAccent2"/>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_below="@id/exercise_set_title">
+              <TextView
+                  android:id="@+id/exercise_wrapper_repetition"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="12sp"
+                  android:text="@string/exercise_set_rest"/>
+
+              <ImageView
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:src="@drawable/ic_set"
+                  app:tint="@color/colorAccent"
+                  android:layout_marginStart="5dp"
+                  android:layout_marginLeft="5dp"
+                  android:contentDescription="@string/content_set_count"/>
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/custom_exercise_update_wrapper"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_centerVertical="true"
+              android:paddingTop="@dimen/little_margin"
+              android:paddingBottom="@dimen/little_margin"
+              android:paddingStart="@dimen/little_margin"
+              android:paddingLeft="@dimen/little_margin"
+              android:layout_toStartOf="@+id/custom_exercise_add_wrapper"
+              android:layout_toLeftOf="@+id/custom_exercise_add_wrapper">
+              <ImageView
+                  android:id="@+id/custom_exercise_update"
+                  android:layout_width="36dp"
+                  android:layout_height="36dp"
+                  android:src="@drawable/ic_update"
+                  app:tint="@color/colorAccent2"
+                  android:paddingStart="@dimen/little_margin"
+                  android:paddingLeft="@dimen/little_margin"
+                  android:contentDescription="@string/content_custom_exercise_update"/>
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/custom_exercise_add_wrapper"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:paddingTop="@dimen/little_margin"
+              android:paddingBottom="@dimen/little_margin">
+              <ImageView
+                  android:id="@+id/custom_exercise_add"
+                  android:layout_width="36dp"
+                  android:layout_height="36dp"
+                  android:src="@drawable/ic_plus"
+                  app:tint="@color/colorAccent2"
+                  android:paddingStart="5dp"
+                  android:paddingLeft="5dp"
+                  android:gravity="center"
+                  android:contentDescription="@string/content_custom_exercise_add"/>
+          </LinearLayout>
+
+      </RelativeLayout>
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:cardUseCompatPadding="true"
+          app:cardCornerRadius="2dp"
+          app:elevation="3dp">
+            <FrameLayout
+                android:background="@color/colorAccent2"
+                android:layout_width="4dp"
+                android:layout_height="match_parent"/>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="@dimen/little_margin">
+              <TextView
+                  android:id="@+id/exercise_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toStartOf="@+id/draggable"
+                  android:layout_toLeftOf="@+id/draggable"
+                  android:layout_alignParentStart="true"
+                  android:layout_alignParentLeft="true"
+                  android:textSize="@dimen/workout_title_size"
+                  android:textColor="@color/colorAccent2"/>
+
+              <include layout="@layout/row_custom_exercise"/>
+
+              <ImageView
+                  android:id="@id/draggable"
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"
+                  android:src="@drawable/ic_move"
+                  android:layout_alignParentTop="true"
+                  android:layout_alignParentEnd="true"
+                  android:layout_alignParentRight="true"
+                  android:paddingTop="@dimen/workout_card_margin"
+                  android:paddingEnd="@dimen/workout_card_margin"
+                  android:paddingStart="@dimen/workout_card_margin"
+				  android:paddingLeft="@dimen/workout_card_margin"
+                  android:contentDescription="@string/content_draggable"/>
+          </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+</LinearLayout>

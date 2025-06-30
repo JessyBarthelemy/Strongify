@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="weight_unit">
+        <item>KG</item>
+        <item>LB</item>
+    </string-array>
+
+    <string-array name="distance_unit">
+        <item>KM</item>
+        <item>MI</item>
+    </string-array>
+
+    <string-array name="size_unit">
+        <item>CM</item>
+        <item>INCHES</item>
+    </string-array>
+
+    <string-array name="goal">
+        <item>@string/goal_bulking</item>
+        <item>@string/goal_cutting</item>
+    </string-array>
+
+    <array name="graph_measures">
+        <item>@color/graphMeasure1</item>
+        <item>@color/graphMeasure2</item>
+        <item>@color/graphMeasure5</item>
+        <item>@color/graphMeasure3</item>
+        <item>@color/graphMeasure4</item>
+    </array>
+
+    <array name="graph_range">
+        <item>@string/range_month</item>
+        <item>@string/range_year</item>
+        <item>@string/range_3_months</item>
+    </array>
+</resources>

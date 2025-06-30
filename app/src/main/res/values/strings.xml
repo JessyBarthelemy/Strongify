@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources [<!ENTITY billing_description "This is the end of the free trial.\n\nIf you have enjoyed the app you can purchase the full version to support my work and enjoy it on all your devices!">]>
+<resources>
+    <string name="app_name">Strongify</string>
+
+    <!-- Global -->
+    <!--
+    id ca-app-pub-5540972317318265~1300533254
+    banner ca-app-pub-5540972317318265/5758174081
+
+    Test
+    id ca-app-pub-3940256099942544~3347511713
+    banner ca-app-pub-3940256099942544/6300978111
+    -->
+    <string name="admob_id">ca-app-pub-5540972317318265~1300533254</string>
+    <string name="admob_banner_id">ca-app-pub-5540972317318265/5758174081</string>
+
+    <string name="rest">Rest</string>
+    <string name="incorrect_value">Incorrect value</string>
+    <string name="stop">Stop</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="ignore">Ignore</string>
+    <string name="close">Close</string>
+    <string name="back">Back</string>
+    <string name="purchase">Purchase</string>
+    <string name="save">Save</string>
+    <string name="time">"%d:%02d"</string>
+    <string name="premium_feature">This is a premium feature. Please unlock Strongify to use it.</string>
+    <string name="content_custom_exercise_update">Update superset or circuit</string>
+    <string name="content_custom_exercise_add">Add exercise to circuit or superset</string>
+    <string name="content_close_timer">Close timer</string>
+
+    <!--Navigation-->
+    <string name="nav_workout">Workouts</string>
+    <string name="nav_exercise">Exercises</string>
+    <string name="nav_history">History</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="workouts">Workouts</string>
+
+    <string name="workout_list_periodicity">%1$d minutes</string>
+
+    <plurals name="workout_list_periodicity_plural">
+        <item quantity="one">%1$d minute</item>
+        <item quantity="other">%1$d minutes</item>
+    </plurals>
+
+    <string name="workout_list_remove_title">Workout removed</string>
+    <string name="workout_list_remove_action">Undo</string>
+    <string name="workout_superset">Superset</string>
+    <string name="workout_circuit">Circuit</string>
+
+    <string-array name="periodicity">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <!-- content description -->
+    <string name="content_exercise_count">Exercise count</string>
+    <string name="content_workout_duration">Workout duration</string>
+    <string name="content_draggable">Draggable zone</string>
+    <string name="content_play_workout">Play workout</string>
+    <string name="content_set_count">Set count</string>
+    <string name="content_exercise_weight">Exercise weight</string>
+    <string name="content_rest">Exercise rest</string>
+    <string name="content_filter">Filter by equipment</string>
+    <string name="content_exercise_explanation">Exercise explanation</string>
+    <string name="content_exercise_icon">Exercise icon</string>
+    <string name="content_exercise_update_equipment">Equipment Update</string>
+    <string name="content_validation">Validation</string>
+    <string name="exercise_icon">Icon of the exercise</string>
+    <string name="exercise_update_equipment">Update equipment</string>
+    <string name="content_update">Update workout</string>
+    <string name="content_menu">Menu</string>
+    <string name="content_history_total_time_icon">Last workout duration</string>
+    <string name="content_distance_icon">Distance</string>
+    <string name="content_note">Workout note</string>
+    <string name="content_skip_execution">Skip execution</string>
+    <string name="content_equipment_icon">Equipment icon</string>
+    <string name="content_time">Rest time</string>
+
+    <!-- Workout creation -->
+    <string name="workout_creation_title">Workout title</string>
+    <string name="workout_creation_title_error">Workout title is required</string>
+    <string name="workout_creation_title_text">New workout</string>
+    <string name="workout_creation_periodicity">Frequency</string>
+    <string name="workout_creation_reminder">Reminder</string>
+    <string name="workout_creation_reminder_check">Remind me to do this workout.</string>
+    <string name="workout_creation_reminder_time"><![CDATA[
+    Reminder on <b> %s </b> at <b> %02dh%02d </b>
+    ]]></string>
+    <string name="workout_creation_reminder_notif">Reminder for your workout: %s.</string>
+    <string name="workout_creation_reminder_error">Please select a periodicity for your reminder.</string>
+    <string name="workout_creation_action">CREATE</string>
+    <string name="workout_update_action">UPDATE</string>
+    <string name="workout_no_data">No workout yet.</string>
+    <string name="exercise_no_data">No exercise yet.</string>
+    <string name="exercise_set_no_data">No exercise set yet.</string>
+
+    <!-- transition name -->
+    <string name="trans_workout_title">workoutTitle_%1$d</string>
+    <string name="trans_workout_periodicity">workoutDesc_%1$d</string>
+    <string name="transition">transition_%1$d</string>
+
+    <string name="exercise_list_remove_title">Exercise removed</string>
+    <!--Exercise sets-->
+    <plurals name="workout_exercise_set_count">
+        <item quantity="one">%1$d set</item>
+        <item quantity="other">%1$d sets</item>
+    </plurals>
+
+    <string-array name="exercise_set_type">
+        <item>Repetition</item>
+        <item>Duration</item>
+        <item>Distance</item>
+    </string-array>
+
+    <string name="workout_rest">%1$d\"%2$02d</string>
+
+    <string name="workout_add_exercise">Add exercise</string>
+    <string name="workout_add_superset">Add superset</string>
+    <string name="workout_add_circuit">Add circuit</string>
+    <string name="workout_add_exercise_action">Add</string>
+
+    <string name="exercise_search_hint">Search exercise</string>
+
+    <!-- equipment -->
+    <string name="filter_action">Filter</string>
+    <string name="filter_title">Filter by equipment</string>
+
+    <!-- exercise set-->
+    <string name="exercise_set_remove_title">Execution removed</string>
+    <string name="exercise_set_set_count">Number of sets</string>
+    <string name="error_set_count">Invalid set count</string>
+    <string name="error_weight">Invalid weight</string>
+
+    <string name="exercise_set_title">Set %1$d</string>
+    <string name="exercise_set_repetition">Goal: </string>
+    <string name="exercise_set_type">Type: </string>
+    <string name="exercise_set_rest">Rest: </string>
+    <string name="exercise_set_turn">Turn : </string>
+    <string name="exercise_set_weight">Weight: </string>
+    <string name="exercise_max">MAX</string>
+
+    <string name="exercise_set_rest_title">Rest period</string>
+    <string name="exercise_set_goal_title">Goal</string>
+    <string name="exercise_min_title">min</string>
+    <string name="exercise_sec_title">sec</string>
+    <string name="validate">Validate</string>
+
+    <!-- Custom exercise modification-->
+    <string name="set_superset_title">Settings of the superset</string>
+    <string name="set_circuit_title">Settings of the circuit</string>
+
+    <!-- Preferences -->
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="preference_display">Display</string>
+
+    <string name="preference_set_repetition_title">Exercise set repetitions</string>
+    <string name="preference_set_weight_title">Exercise set weight</string>
+    <string name="preference_set_repetition_desc">Number of default set repetition when adding a set to an exercise: %1$s</string>
+    <string name="preference_set_weight_desc">Default set mass when adding an exercise to a workout: %1$s</string>
+    <string name="default_set_count">10</string>
+    <string name="default_weight">10</string>
+    <string name="default_tick_count">5</string>
+
+    <string name="preference_workout_execution">Workout</string>
+    <string name="preference_ringer_activation">Activate ringer</string>
+    <string name="preference_ringer_tick_count">Timer repetition</string>
+    <string name="preference_ringer_tick_count_desc">Repeat %1$s seconds before the end of the timer</string>
+    <string name="preference_timer_head">Chronometer overlay</string>
+
+    <string name="exercise_weight_unit">Mass unit</string>
+    <string name="exercise_distance_unit">Distance unit</string>
+    <string name="size_unit">Size unit</string>
+
+    <string name="default_weight_unit">LB</string>
+    <string name="default_distance_unit">MI</string>
+    <string name="default_size_unit">INCHES</string>
+
+    <string name="preference_group_unit">Unit</string>
+    <string name="preference_exercise_group">Exercise</string>
+
+    <string name="preference_save">Save</string>
+    <string name="preference_save_desc">Save all your workouts, histories and exercises into Download folder.</string>
+
+    <string name="preference_restore">Restore</string>
+    <string name="preference_restore_desc">Restore all your workouts, histories and exercises from backup file.</string>
+
+    <string name="preference_dark_theme">Use dark theme</string>
+    <string name="preference_about">About</string>
+
+    <string name="about"><![CDATA[<b>Version %s</b><br>Strongify<br>Contact address: jessy.barthelemy08@gmail.com<br><br>
+<b>Illustrations</b><br>Exercises from Everkinetic database with Creative Commons license.<br><br>
+
+<b>Notifications sound :</b><br>
+Emotion sounds Ringing bell - happy.wav by domrodrig of Freesound.org<br><br>
+Bell, Counter, A.wav by InspectorJ (www.jshaw.co.uk) of Freesound.org<br><br>
+Bicycle_bell_01.wav.wav by magedu of Freesound.org<br><br>
+    ]]></string>
+
+    <string name="preference_facebook">Follow us</string>
+    <string name="preference_facebook_link">https://www.facebook.com/StrongifyApp/</string>
+
+    <string name="preference_store">Rate us</string>
+
+    <!-- Group -->
+    <string name="group_chest">Chest</string>
+    <string name="group_arm">Arm</string>
+    <string name="group_shoulder">Shoulder</string>
+    <string name="group_abs">Abs</string>
+    <string name="group_leg">Leg</string>
+    <string name="group_back">Back</string>
+    <string name="group_cardio">Cardio</string>
+
+    <!-- Exercise -->
+    <string name="ex_ab_wheel">Ab rollout on knees</string>
+    <string name="ex_hip_abduction">Hip abduction</string>
+    <string name="ex_bench_to_skull">Decline close grip bench to skull</string>
+    <string name="ex_decline_triceps_extension">Decline ez bar triceps extension</string>
+    <string name="ex_ankle_circles">Ankle circles</string>
+    <string name="ex_iron_cross_dumbbells">Iron cross with dumbbells</string>
+    <string name="ex_cross_over">Cross over with bands</string>
+    <string name="ex_cross_body_crunch">Cross body crunches</string>
+    <string name="ex_crunch_stability">Crunches with stability ball</string>
+    <string name="ex_decline_crunch">Decline crunch</string>
+    <string name="ex_decline_ob_crunch">Decline oblique crunch</string>
+    <string name="ex_curl_machine">Biceps curl with machine</string>
+    <string name="ex_cable_curl">High cable curls</string>
+    <string name="ex_al_curl_dumb">Alternating biceps curl with dumbbell</string>
+    <string name="ex_al_hammer_curl_dumb">Alternating hammer curl with dumbbell</string>
+    <string name="ex_spider_curl_bar">Spider curl with barbell</string>
+    <string name="ex_ez_bar_curl">EZ bar curl</string>
+    <string name="ex_wide_grip_curl_bar">Wide grip biceps curl with barbell</string>
+    <string name="ex_concentration_curl_stab">Concentration curl on stability ball</string>
+    <string name="ex_al_inc_curl_dumb">Alternating incline curl with dumbbell</string>
+    <string name="ex_reverse_curl_dumb">Reverse curl with dumbbells</string>
+    <string name="ex_preacher_hammer_dumb">Preacher hammer curl with dumbbells</string>
+    <string name="ex_curl_cable">Curl with cable</string>
+    <string name="ex_overhead_curl_cable">Overhead curl with cable </string>
+    <string name="ex_preacher_curl_machine">Preacher curl with machine</string>
+    <string name="ex_preacher_curl_bar">Preacher curl with barbell</string>
+    <string name="ex_preacher_curl_cable">Preacher curl with cable</string>
+    <string name="ex_close_grip_ez_curl">close grip EZ bar curl</string>
+    <string name="ex_curl_stability">Curl on stability ball</string>
+    <string name="ex_zot_curl_dumb">Zottman curl with dumbbells</string>
+    <string name="ex_zot_preacher_curl_dumb">Zottman preacher curl with dumbbells</string>
+    <string name="ex_inc_bench_press">Incline bench press</string>
+    <string name="ex_bar_neck_press">Barbell neck press</string>
+    <string name="ex_rev_bench_press">Reverse bench press</string>
+    <string name="ex_mach_bench_press">Machine bench press</string>
+    <string name="ex_wide_grip_bench_press">Wide grip bench press</string>
+    <string name="ex_nar_grip_bench_press">Narrow grip bench press</string>
+    <string name="ex_smith_close_grip_bench_press">Smith machine close grip bench press</string>
+    <string name="ex_smith_bench_press">Smith machine bench press</string>
+    <string name="ex_one_arm_bench_press">One arm bench press</string>
+    <string name="ex_cuban_dumb">Cuban dumbbells press</string>
+    <string name="ex_decl_chest_press">Decline chest press</string>
+    <string name="ex_dec_dumb_bench_press">Decline dumbbell bench press</string>
+    <string name="ex_wide_grip_decline_bench_press">Wide grip decline bench press</string>
+    <string name="ex_inc_chest_press">Incline chest press</string>
+    <string name="ex_dumb_inc_bench_press">Dumbbell incline bench press</string>
+    <string name="ex_smith_machine_inc_bench_press">Decline smith machine bench press</string>
+    <string name="ex_one_arm_dumbbell">One arm dumbbell shoulder press</string>
+    <string name="ex_dips_machine">Dips using machine</string>
+    <string name="ex_drag_curl">Drag curl</string>
+    <string name="ex_flat_bench_cable_fly">Flat bench cable fly\'s</string>
+    <string name="ex_decline_dumb_fly">Decline dumbbell fly\'s </string>
+    <string name="ex_hammer_grip_inc_bench_press">Hammer grip incline bench press</string>
+    <string name="ex_front_cable_raises">Front cable raises</string>
+    <string name="ex_front_dumb_raises">Front dumbbell raise</string>
+    <string name="ex_back_extension_stability">Back extension on stability ball</string>
+    <string name="ex_triceps_ext_cable">Triceps extension with cable</string>
+    <string name="ex_one_arm_pulley_extension">One arm low pulley triceps extension</string>
+    <string name="ex_over_triceps_ext_bar">Overhead triceps extension with barbell</string>
+    <string name="ex_dec_triceps_ext_dumb">Decline triceps extension with dumbbell</string>
+    <string name="ex_inc_triceps_ext_bar">Incline triceps extension with barbell</string>
+    <string name="ex_inc_triceps_ext_cable">Incline triceps extension with cable</string>
+    <string name="ex_rear_lunges_dumb">Rear lunges with dumbbell</string>
+    <string name="ex_dumb_lunges">Dumbbells lunges</string>
+    <string name="ex_lat_lunges_curl">Lateral lunges with biceps curl</string>
+    <string name="ex_side_bend_dumb">Side bend with dumbbell</string>
+    <string name="ex_smith_good_morning">Smith machine good morning</string>
+    <string name="ex_hack_squat_machine">Hack squat machine</string>
+    <string name="ex_smith_hack_squat">Smith machine hack squat</string>
+    <string name="ex_stand_leg_curl">Standing leg curl</string>
+    <string name="ex_leg_extension">Leg extension</string>
+    <string name="ex_back_fly_elas">Back fly\'s with elastic</string>
+    <string name="ex_bent_over_lat_cable_raise">Bent over lateral cable raise</string>
+    <string name="ex_over_squat_bar">Overhead squat with barbell</string>
+    <string name="ex_balance_board">Balance board</string>
+    <string name="ex_side_plank">Side plank</string>
+    <string name="ex_pushup_ball">Push ups with feet on ball</string>
+    <string name="ex_bridging">Bridging</string>
+    <string name="ex_dumb_upright_row">Dumbbell upright row</string>
+    <string name="ex_smith_upright_row">Smith machine upright row</string>
+    <string name="ex_seated_cable_row">Seated cable rows</string>
+    <string name="ex_smith_row">Smith machine rows</string>
+    <string name="ex_cable_shrug">Cable shoulder shrugs</string>
+    <string name="ex_bar_shrug">Barbell shrugs</string>
+    <string name="ex_smith_shrug">Smith machine shoulder shrugs</string>
+    <string name="ex_dumb_deadlift">Dumbbell dead lifts</string>
+    <string name="ex_smith_deadlift">Smith machine dead lifts</string>
+    <string name="ex_single_leg_squat_bar">Single leg squat with barbell</string>
+    <string name="ex_lying_squat">Lying squat</string>
+    <string name="ex_front_squat_bar">Front squat with barbell</string>
+    <string name="ex_squat_dumb">Squat using dumbbell</string>
+    <string name="ex_jeff_squat_bar">Jefferson squats with barbell</string>
+    <string name="ex_side_squat_bar">Side squats with barbell</string>
+    <string name="ex_smith_squat">Smith machine squats</string>
+    <string name="ex_front_squat_bench_bar">Front squat to bench with barbell</string>
+    <string name="ex_squat_bench_dumb">Squat to bench with dumbbells</string>
+    <string name="ex_zercher_squat">Zercher squats</string>
+    <string name="ex_v_bar_pulldown">V bar pull down</string>
+    <string name="ex_gironda_chin">Gironda sternum chins</string>
+    <string name="ex_inc_push_down_cable">Incline push down with cable</string>
+    <string name="ex_wide_grip_lat_pulldown">Wide grip lat pull down</string>
+    <string name="ex_nar_par_grip_chinups">Narrow parallel grip chin ups</string>
+    <string name="ex_chin_ups">Chins ups</string>
+    <string name="ex_over_pulldown">Overhand pull down</string>
+    <string name="ex_wide_grip_chinup">Wide grip chin up</string>
+    <string name="ex_triceps_kickback_dumb">Triceps kickback with dumbbell</string>
+    <string name="ex_ball_wall_circles">ball wall circles</string>
+
+    <string name="ex_ab_rollout_bar">Ab rollout with barbell</string>
+    <string name="ex_bent_arm_pullover">Bent arm pullover</string>
+    <string name="ex_butterfly_mach">Butterfly on machine</string>
+    <string name="ex_crunches">Crunches</string>
+    <string name="ex_curl_bar">Curl with barbell</string>
+    <string name="ex_concentration_curl_dumb">Concentration curl with dumbbell</string>
+    <string name="ex_curl_dumb">Curl with dumbbell</string>
+    <string name="ex_flexor_inc_curl_dumb">Flexor incline curls with dumbbell</string>
+    <string name="ex_hammer_curl_cables">Hammer curls with cables</string>
+    <string name="ex_hammer_curl_dumb">Hammer curl with dumbbell</string>
+    <string name="ex_one_arm_preacher_curl">One arm preacher curl with dumbbell</string>
+    <string name="ex_arnold_press">Arnold press</string>
+    <string name="ex_bench_press">Bench press</string>
+    <string name="ex_bench_press_dumbell">Bench press with dumbbells</string>
+    <string name="ex_close_grip_press_chin_bar">Close grip triceps press to chin with barbell</string>
+    <string name="ex_dec_bar_bench_press">Decline barbell bench press</string>
+    <string name="ex_dumb_shoulder_press">Dumbbells shoulder press</string>
+    <string name="ex_bench_dips">Bench dips</string>
+    <string name="ex_chest_dips">Chest dips</string>
+    <string name="ex_dumb_fly">Dumbbell fly\'s</string>
+    <string name="ex_front_bar_raises">Front barbell raises</string>
+    <string name="ex_lat_dumb_raise">Lateral dumbbell raises</string>
+    <string name="ex_standing_triceps_extension">Standing triceps extension</string>
+    <string name="ex_rear_lunges_bar">Rear lunges with barbell</string>
+    <string name="ex_bar_lunges">Barbell lunges</string>
+    <string name="ex_walking_lunges">Walking lunges</string>
+    <string name="ex_bar_good_morning">Barbell good morning</string>
+    <string name="ex_hack_squat_bar">Hack squat with barbell</string>
+    <string name="ex_stat_abd_draw_in">Stationary abdominal draw in</string>
+    <string name="ex_pushup">Push ups</string>
+    <string name="ex_close_pushup">Close triceps push ups</string>
+    <string name="ex_calves_press_leg_mach">Press on leg machine</string>
+    <string name="ex_dumb_bent_arm_pullover">Dumbbell bent arm pullover</string>
+    <string name="ex_bent_knee_hip_raise">Bent knee hip raise</string>
+    <string name="ex_rear_row_barbell">Rear deltoid row barbell</string>
+    <string name="ex_rear_row_dumb">Rear deltoid row dumbbell</string>
+    <string name="ex_t_bar_row">T bar rows</string>
+    <string name="ex_shrug">Shrugs</string>
+    <string name="ex_deadlift">Deadlift</string>
+    <string name="ex_barbell_squat">Barbell squat</string>
+    <string name="ex_superman">Superman</string>
+    <string name="ex_underhand_pulldown">Underhand pull down</string>
+    <string name="ex_cable_rows">Seated cable rows</string>
+
+    <string name="desc_ab_rollout">Place a barbell on the floor at your feet.\nBending at the waist, grip the barbell with a shoulder with overhand grip.\nWith a slow controlled motion, roll the bar out so that your back is straight.\nRoll back up raising your hips and butt as you return to the starting position.</string>
+    <string name="desc_bent_arm_pullover">Lay down on a bench, the bar should be directly above your eyes, the arms are stretched and shoulder-wide apart, palms outwards.\n\nBring it slowly down above your head with yours upper arms. Keep your arms tightened.\nBring it slowly up to the initial position.\n</string>
+    <string name="desc_butterfly_mach">Sit on the butterfly machine, the feet have a good contact with the floor, the upper arms are parallel to the floor.\nPress your arms together till the handles are practically together (but aren\'t!).\nGo slowly back. The weights should stay all the time in the air.</string>
+    <string name="desc_crunches">Lay down on your back a soft surface, the feet are on the floor. \n\nAsk a partner or use some other help (barbell, etc…) to keep them fixed, your hands are behind your head.\n\nFrom this position move your upper body up till your head or elbows touch your knees. Do this movement by rolling up your back.</string>
+    <string name="desc_curl_bar">Hold the Barbell shoulder-wide, the back is straight, the shoulders slightly back, the arms are stretched.\nBend the arms, bringing the weight up. Without pausing, let down the bar with a slow and controlled movement.\n\nDon\'t allow your body to swing during the exercise, all work is done by the biceps,which are the only muscles that should move (pay attention to the elbows).</string>
+    <string name="desc_concentration_curl_dumb">Sit on bench. Grasp dumbbell between feet. Place back of upper arm to inner thigh. Lean into leg to raise elbow slightly.\n\nDo a slight rotation on the top of the movement with the weight.</string>
+    <string name="desc_curl_dumb">Hold two barbells, the arms are stretched, the hands are on your side, the palms face inwards.\n\nBend the arms and bring the weight up. At the same time, rotate your arms by 90 degrees at the very beginning of the movement.\nAt the highest point, rotate a little the weights further outwards. Without a pause, bring them down, slowly.\n\nDon\'t allow your body to swing during the exercise, all work is done by the biceps, which are the only muscles that should move (pay attention to the elbows).</string>
+    <string name="desc_flexor_inc_curl_dumb">With elbows back to sides, raise one dumbbell and rotate forearm until forearm is vertical and palm faces shoulder.\nLower to original position and repeat with opposite arm. Continue to alternate between sides.</string>
+    <string name="desc_hammer_curl_cables">Take a cable in your hands (palms parallel, point to each other), the body is straight.\n\nBend the arms and bring the weight up with a fast movement. Without any pause bring it back down with a slow, controlled movement, but don\'t stretch completely your arms.\n\nDon\'t swing your body during the exercise, the biceps should do all the work here.\nThe elbows are at your side and don\'t move.</string>
+    <string name="desc_hammer_curl_dumb">Hold two dumbbells and sit on a bench with a straight back, the shoulders are slightly rolled backwards. \n\nYour pals point to your body. Bend the arms and bring the weight up.\nDon\'t rotate your hands, as with the curls. Without any pause bring the dumbbell down with a slow, controlled movement.\n\nDon\'t swing your body during the exercise, the biceps should do all the work here. The elbows are at your side and don\'t move.</string>
+    <string name="desc_one_arm_preacher_curl">Place the EZ curl bar on the rest handles in front of the preacher bench.\nLean over the bench and grab the EZ curl bar with palms up.\n\nSit down on the preacher bench seat so your upper arms rest on top of the pad and your chest is pressed against the pad.\nLower the weight until your elbows are extended and arms are straight.\nBring the weights back up to the starting point by contracting biceps. Repeat.</string>
+    <string name="desc_arnold_press">Sit on a bench, keep your back straight.\nHold the dumbbells in front of you at your upper chest level with your palms facing your body.\n\nBring the weight up with a rotation of your wrist (palms out when you have your arms stretched).\nBring it down with the inverse rotation.</string>
+    <string name="desc_bench_press">Lay down on a bench, the bar should be directly above your eyes, the knees are somewhat angled and the feet are firmly on the floor.\n\nConcentrate, breath deeply and grab the bar more than shoulder wide.\nBring it slowly down till it briefly touches your chest at the height of your nipples. Push the bar up.</string>
+    <string name="desc_bench_press_dumbell">The movement is very similar to benchpressing with a barbell, however, the weight is brought down to the chest at a lower point.\n\nHold two dumbbells and lay down on a bench. Hold the weights next to the chest, at the height of your nipples and press them up till the arms are stretched.\nLet the weight slowly and controlled down.</string>
+    <string name="desc_nar_grip_bench_press">Perform a typical bench press, but hold the bar with your hands approximately shoulder-width apart and keep your elbows close to your body.</string>
+    <string name="desc_dec_bar_bench_press">Lay down on a decline bench, the bar should be directly above your eyes, the knees are somewhat angled and the feet are firmly on the floor.\nConcentrate, breath deeply and grab the bar more than shoulder wide.\nBring it slowly down till it briefly touches your chest at the height of your nipples. Push the bar up.</string>
+    <string name="desc_dumb_shoulder_press">Sit down on a bench, keep the lower back slightly bent.\nGrab the dumbbells and place them above your shoulders, palms face inwards.\nBring the dumbbells up above your head and bring them inwards.\nBring it down to the initial position.</string>
+    <string name="desc_bench_dips">Put two benches so far apart, that you can hold onto one with your hands and are just able to reach the other with your feet.\n\nThe legs stay during the exercise completely stretched.\n\nWith your elbows facing back, bend them as much as you can. Push yourself up, but don\'t stretch out the arms.</string>
+    <string name="desc_chest_dips">Hold onto the bars at a narrow place (if they are not parallel) and press yourself up, but don\'t stretch the arms completely, so the muscles stay during the whole exercise under tension.\n\nNow bend the arms and go down as much as you can, keeping the elbows always pointing back, At this point, you can make a short pause before repeating the movement.</string>
+    <string name="desc_dumb_fly">Lay down on a bench and stretch out your arms in front of you (neutral grip).\n\nBring the dumbbells down until your arm are forming a right angle.\n\nBring the dumbbells up at the starting position without make them collide.</string>
+    <string name="desc_front_bar_raises">Stand straight, foots are shoulder-wide apart, one dumbbell in each hand palms inwards.\n\nRaise your arms in front of you until they are parallel to the floor. Keep your arms stretched during the execution.\nGo back down to the initial position.</string>
+    <string name="desc_lat_dumb_raise">Stand straight, foots are shoulder-wide apart, one dumbbell in each hand, neutral grip.\nRaise your arms along your body until they are parallel to the floor.\nKeep your arms stretched during the execution.\nGo back down to the initial position. </string>
+    <string name="desc_standing_triceps_extension">Position one dumbbell over head with both hands under inner plate (heart shaped grip).\n\nWith elbows over head, lower forearm behind upper arm by flexing elbows.\nFlex wrists at bottom to avoid hitting dumbbell on back of neck.\nRaise dumbbell over head by extending elbows while hyper extending wrists.\nReturn and repeat.</string>
+    <string name="desc_rear_lunges_bar">Put barbel on the back of your shoulders. Stand upright, then take the first step backward.\n\nStep should bring you backward so that your supporting leg knee can touch the floor. \nThen stand back up and repeat with the other leg.</string>
+    <string name="desc_bar_lunges">Put barbell on the back of your shoulders. Stand upright, then take the first step forward.\nStep should bring you forward so that your supporting legs knee can touch the floor.\nThen stand back up and repeat with the other leg.\n\nRemember to keep good posture.</string>
+    <string name="desc_walking_lunges">Take two dumbbells in your hands, stand straight, feet about shoulder wide.\n\nTake one long step so that the front knee is approximately forming a right angle.\nThe back leg is stretched, the knee is low but doesn\'t touch the ground.\n\n"Complete" the step by standing up and repeat the movement with the other leg.</string>
+    <string name="desc_bar_good_morning">Put the bar on your shoulders, keep the head straight , feet are shoulders-wide apart and your knee are slightly bent.\n\nBend your chest until it is parallel to the floor, your head always fixing in front of you.\nGo back to the initial position.</string>
+    <string name="desc_hack_squat_bar">Perform leg squats with barbell behind your legs.</string>
+    <string name="desc_stat_abd_draw_in">Get into a position on the floor supporting your weight on your forearms and knees.\nArms are bent and directly below the shoulder.\n\nKeep your body straight at all times and hold this position as long as possible.\nTo increase difficulty an arm or leg can be raised while performing this exercise. </string>
+    <string name="desc_pushup">Start with your body stretched, your hands are shoulder-wide apart on the ground.\nPush yourself off the ground till you stretch your arms.\nThe back is always straight and as well as the neck (always look to the ground).\nLower yourself to the initial position and repeat.</string>
+    <string name="desc_close_pushup">Start with your body stretched, your hands are spaced from 10 cm on the ground.\n\nPush yourself off the group till you stretch your arms.\n\nYour back is always straight as well as your neck (always look to the ground).\nLower yourself to the initial position and repeat.</string>
+    <string name="desc_calves_press_leg_mach">Lie on the press machine, put your feet on the platform, shoulder-wide apart, your feet outwards.\nBring the weight up until your legs are almost stretched.\nGo back to the initial position before peeling your pelvis without rounding off your back.</string>
+    <string name="desc_dumb_bent_arm_pullover">Lay down on a bench, one dumbbell in your hands and in front of your head, palms toward the ceiling.\n\nBring the weight down as much as possible.\nGo back to the initial position.\n\nDon\'t forget to add an additional clamp for the dumbbell.</string>
+    <string name="desc_bent_knee_hip_raise">Lay down on a bench and hold onto the recliner with your hands to keep you stable.\nHold your legs straight and lift them till they make an angle of about 45°. \nMake a short pause of 1 sec and go slowly down to the initial position.</string>
+    <string name="desc_rear_row_barbell">Grab the barbell with a wide grip (slightly more than shoulder wide) and lean forward.\nYour upper body is not quite parallel to the floor, but forms a slight angle.\nThe chest\'s out during the whole exercise.\n\nPull now the barbell towards your belly button, not further up.\nGo slowly down to the initial position. \nDon\'t swing with your body and keep your arms next to your body.</string>
+    <string name="desc_rear_row_dumb">Put a knee and a hand on a bench, keep your back straight.\nGrab a dumbbell with your other hand.\nBring the weight up perpendicularly to the floor while raising your elbow as high as you can.\nGo back to the initial position without totally stretching your arm.</string>
+    <string name="desc_t_bar_row">The execution of this exercise is very similar to the regular bent over rowing, only that the bar is fixed here.\n\nGrab the barbell with a wide grip (slightly more than shoulder wide) and lean forward.\nYour upper body is not quite parallel to the floor, but forms a slight angle.\nThe chest\'s out during the whole exercise.\nPull now the barbell with a fast movement towards your belly button, not further up. Go slowly down to the initial position.\nDon\'t swing with your body and keep your arms next to your body.</string>
+    <string name="desc_shrug">Stand with straight body, the hands are hanging freely on the side and hold each a dumbbell.\nLift from this position the shoulders as high as you can, but don\'t bend the arms during the movement. \nOn the highest point, make a short pause of 1 or 2 seconds before returning slowly to the initial position.\nWhen training with a higher weight, make sure that you still do the whole movement!</string>
+    <string name="desc_deadlift">Stand firmly, with your feet slightly more than shoulder wide apart.\nStand directly behind the bar where it should barely touch your shin, your feet pointing a bit out. \n\nBend down with a straight back, the knees also pointing somewhat out. Grab the bar with a shoulder wide grip.\n\nPull the weight up. At the highest point make a slight hollow back and pull the bar back.\nHold 1 or 2 seconds that position.\n\nGo down, making sure the back is not bent.\nOnce down you can either go back again as soon as the weights touch the floor, or make a pause, depending on the weight.</string>
+    <string name="desc_barbell_squat">Make sure you have put the barbell at a height where you can comfortably take it out and put it back in.\nTake it out and make yourself ready:\n\nThe bar is somewhat lower than your shoulders.\nThe feet are quite apart and point out.\nThe head is in your neck and looks up.\nThe chest is out.\n\nGo now slowly down, till your thighs are parallel with the floor, not lower.\nThe knees point outwards, your butt, out.\nMake a small pause of 1 second and with as much energy as you can, push the weight up.\nMake a pause of 2 seconds and repeat.</string>
+    <string name="desc_superman">Lay flat on your stomach with your arms extended in front of you on the ground as your legs are lying flat.\n\nLift both your arms and legs at the same time, as if you were flying, and contract the lower back. \n\nMake sure that you are breathing and, depending on your fitness level, hold the movement for at least two to five seconds per repetition.</string>
+    <string name="desc_underhand_pulldown">Grab the pull up bar with a wide grip, the body is hanging freely.\nKeep your chest out and pull yourself up till your chin reaches the bar or it touches your neck, if you want to pull behind you.\nGo with a slow and controlled movement down, always keeping the chest out.</string>
+
+    <string name="eq_abs_bench">Abdominal Bench</string>
+    <string name="eq_barbell">Barbells</string>
+    <string name="eq_bench_press">Bench Press</string>
+    <string name="eq_calf_machine">Calf Machine</string>
+    <string name="eq_dipping_bar">Dipping Bars</string>
+    <string name="eq_dumbbells">Dumbbells</string>
+    <string name="eq_elliptic">Elliptic bike</string>
+    <string name="eq_ez_bar">EZ bar</string>
+    <string name="eq_foam_roller">Foam Roller</string>
+    <string name="eq_hack_squat">Hack Squat Machine</string>
+    <string name="eq_inc_bench_press">Incline Bench Press</string>
+    <string name="eq_kettlebell">Kettle Bells</string>
+    <string name="eq_leg_abd">Leg Abduction Machine</string>
+    <string name="eq_leg_curl">Leg Curl Machine</string>
+    <string name="eq_leg_extension">Leg Extension Machine</string>
+    <string name="eq_peck_deck">Pec Deck Machine</string>
+    <string name="eq_pull_up">Pull Up Bar</string>
+    <string name="eq_pull_up_machine">Pull up machine</string>
+    <string name="eq_pulley">Cables and Pulleys</string>
+    <string name="eq_rowing">Rowing machine</string>
+    <string name="eq_smith_machine">Smith Machine</string>
+    <string name="eq_squat_rack">Squat Rack</string>
+    <string name="eq_stability_ball">Stability Ball </string>
+    <string name="eq_treadmills">Treadmills</string>
+    <string name="eq_triceps_bar">Triceps bar</string>
+    <string name="ex_press">Press</string>
+
+    <!-- Exercise description-->
+    <string name="exercise_equipments">Equipments</string>
+    <string name="exercise_description">Description</string>
+    <string name="exercise_no_equipment">No equipment selected.</string>
+    <string name="exercise_no_desc">No description available.</string>
+    <string name="exercise_eq_desc">Description similar to "%s".</string>
+
+    <!-- exercise execution -->
+    <string name="workout_no_exercise">You have an exercise without sets</string>
+    <string name="execution_rest">Rest: %s</string>
+    <string name="end_title">Workout end</string>
+    <string name="result_ratio">%1$d/%2$d</string>
+    <string name="result_ratio_double">%1$.1f/%2$.1f</string>
+    <string name="current_set">Set %1$d/%2$d</string>
+    <string name="next_exercise">Next exercise</string>
+    <string name="set_performance">Performances</string>
+    <string name="image_too_big">Image too big to be displayed</string>
+
+    <!-- Manage exercises -->
+    <string name="manage_exercise">Manage exercises</string>
+    <string name="manage_exercise_mini_set">You cannot remove this set</string>
+    <string name="manage_exercise_added">Exercise added in position %1$d</string>
+    <string name="change_exercise_title">Set next exercise</string>
+    <string name="change_exercise_unavailable">You cannot change exercise during superset or circuit.</string>
+    <string name="change_no_exercise">No remaining exercises.</string>
+    <string name="add_set">Add set</string>
+
+    <plurals name="next_exercise_set_count">
+        <item quantity="one">%1$d set</item>
+        <item quantity="other">%1$d sets</item>
+    </plurals>
+
+    <string name="overlay_permission_title">Required permission</string>
+    <string name="overlay_permission"> Strongify can display the chronometer on top of other application but has to have a permission enabled in order to do that.\n\nWould you like to enable this feature?</string>
+
+    <string name="workout_note">Workout note</string>
+
+    <!-- History -->
+    <string name="history_list_remove_title">History removed</string>
+    <string name="history_title">History</string>
+    <string name="history_date_separator">-</string>
+
+    <!-- Save / Restore -->
+    <string name="permission_denied">Permission denied</string>
+    <string name="save_success">Backup successful</string>
+    <string name="save_error">Error making backup</string>
+    <string name="backup_restored">Data restored</string>
+    <string name="backup_restored_error">Error restoring data</string>
+
+    <!-- Review -->
+    <string name="review_title">Do you like Strongify?</string>
+    <string name="review_description">If you like Strongify, could you take a moment to review the app? </string>
+    <string name="review_yes">Yes</string>
+    <string name="review_no">No</string>
+    <string name="review_later">Later</string>
+
+    <string name="startup_title">Welcome to Strongify!</string>
+    <string name="startup_description">Strongify is a free application in development.\n\nIf you have any suggestions for improvements let us know on the Strongify facebook page.\n\nFor starters you can create a new workout routine by clicking on the plus button.</string>
+
+    <!-- Tutorial -->
+    <string name="tutorial_workout_list_title">Create a workout</string>
+    <string name="tutorial_workout_title">Add exercises</string>
+    <string name="tutorial_workout">You can add normal, superset, or circuit exercise by clicking on the plus button.</string>
+
+    <string name="tutorial_set_title">Add sets</string>
+    <string name="tutorial_set">By clicking the plus button, a new set will be created with the settings of the latest set.\n\nData are automatically saved when you go back to the exercises list.</string>
+
+    <string name="tutorial_play_title">Start a workout</string>
+    <string name="tutorial_play">You can either start a workout by clicking on the play button or setting the workout by clicking on the title.</string>
+
+    <string name="tutorial_replay"> Replay tutorial </string>
+
+    <string name="no_history">No history yet.</string>
+
+    <!-- Exercice creation -->
+    <string name="exercise_creation_title">Exercise creation</string>
+    <string name="exercise_update_title">Update exercise</string>
+    <string name="exercise_title">Exercise title</string>
+
+    <string name="overlay_confirm">Confirm</string>
+    <string name="overlay_delete_exercise"> Delete this exercise? </string>
+
+    <!-- Profile -->
+    <string name="profile_years">years</string>
+    <string name="first_name">First name</string>
+    <string name="age">Age</string>
+    <string name="size">Size in %s</string>
+    <string name="body_measurements">Body measurements</string>
+    <string name="last_measure">Last measure on %s</string>
+
+    <string name="weight">Weight</string>
+    <string name="repetitions">Repetitions</string>
+    <string name="last_weighing">Last weighing on %s</string>
+    <string name="no_data_yet">No data yet</string>
+
+    <string name="goal_bulking">Bulking phase</string>
+    <string name="goal_cutting">Cutting phase</string>
+
+    <string name="weight_mass">Mass</string>
+    <string name="weight_fat">Fat</string>
+    <string name="weight_water">Water</string>
+    <string name="weight_bones">Bones</string>
+    <string name="weight_muscle">Muscles</string>
+    <string name="date">Date</string>
+    <string name="weight_update_warning">Please note that a measure already exists for this date, she will be overwritten.</string>
+
+
+    <!-- Import / Export workout -->
+    <string name="workout_export"> Export workout </string>
+    <string name="workout_import"> Import workout </string>
+    <string name="workout_export_error"> Error exporting workout </string>
+    <string name="workout_export_subject"> Sharing of my workout via Strongify </string>
+    <string name="workout_import_success"> Workout successfully imported  </string>
+    <string name="workout_import_error"> Error importing workout </string>
+    <string name="workout_import_file"> Select workout </string>
+
+    <!-- Graph-->
+    <string name="range_month"> Month </string>
+    <string name="range_year"> Year </string>
+    <string name="range_3_months"> 3 last months </string>
+
+    <string name="name"> Name </string>
+    <string name="min"> Min </string>
+    <string name="max"> Max </string>
+    <string name="average"> Avg </string>
+    <string name="sum"> Sum </string>
+
+    <string name="measure_removed"> Measure correctly removed </string>
+    <string name="hide_dots"> Hide dots </string>
+
+    <!-- body measurements-->
+    <string name="neck"> Neck </string>
+    <string name="shoulders"> Shoulders </string>
+    <string name="chest"> Chest </string>
+    <string name="biceps"> Biceps </string>
+    <string name="forearm"> Forearm </string>
+    <string name="wrist"> Wrist </string>
+    <string name="waist"> Waist </string>
+    <string name="hips"> Hips </string>
+    <string name="thigh"> Thigh </string>
+    <string name="calf"> Calf </string>
+    <string name="ankle"> Ankle </string>
+    <string name="right"> Right </string>
+    <string name="left"> Left </string>
+
+    <string name="right_abbreviation"> R </string>
+    <string name="left_abbreviation"> L </string>
+
+    <!-- Admob-->
+    <string name="remove_ads">Remove ads</string>
+    <string name="remove_ads_error">Error while removing ads. Please check your internet connection.</string>
+    <string name="remove_ads_restart">You have successfully removed ads. Please restart your application.</string>
+</resources>

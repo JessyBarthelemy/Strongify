@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/exercise_title"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/workout_set_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/little_margin"
+        android:layout_marginRight="@dimen/little_margin"
+        android:textColor="@color/subtitle"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/exercise_set_repetition_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_set"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            app:tint="@color/colorAccent"
+            android:contentDescription="@string/content_set_count" />
+
+        <TextView
+            android:id="@+id/exercise_set_repetition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/little_margin"
+            android:layout_marginRight="@dimen/little_margin"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/exercise_weight_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/content_exercise_weight"
+            app:tint="@android:color/black" />
+
+        <TextView
+            android:id="@+id/exercise_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/little_margin"
+            android:layout_marginRight="@dimen/little_margin"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/exercise_rest_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/exercise_rest_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_time"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            app:tint="@color/colorAccent2"
+            android:contentDescription="@string/content_rest"/>
+
+        <TextView
+            android:id="@+id/exercise_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/little_margin"
+            android:layout_marginRight="@dimen/little_margin"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp">
+
+    <ImageView
+        android:id="@+id/exercise_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:tint="?colorImageTint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/content_exercise_icon"/>
+
+    <TextView
+        android:id="@+id/exercise_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toRightOf="@id/exercise_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/little_margin"
+        android:layout_marginLeft="@dimen/little_margin"
+        android:layout_marginBottom="@dimen/little_margin"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/exercise_set_repetition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="@id/exercise_set_repetition_icon"
+        app:layout_constraintBottom_toBottomOf="@id/exercise_set_repetition_icon"
+        app:layout_constraintLeft_toLeftOf="@id/exercise_title" />
+
+    <ImageView
+        android:id="@+id/exercise_set_repetition_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:contentDescription="@string/content_set_count"
+        app:layout_constraintLeft_toRightOf="@+id/exercise_set_repetition"
+        app:layout_constraintTop_toBottomOf="@id/exercise_title" />
+
+    <TextView
+        android:id="@+id/exercise_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginStart="@dimen/little_margin"
+        android:layout_marginLeft="@dimen/little_margin"
+        app:layout_constraintLeft_toRightOf="@id/exercise_set_repetition_icon"
+        app:layout_constraintTop_toTopOf="@id/exercise_weight_icon"
+        app:layout_constraintBottom_toBottomOf="@id/exercise_weight_icon" />
+
+    <ImageView
+        android:id="@+id/exercise_weight_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        app:tint="@android:color/black"
+        android:contentDescription="@string/content_exercise_weight"
+        app:layout_constraintLeft_toRightOf="@id/exercise_weight"
+        app:layout_constraintTop_toBottomOf="@id/exercise_title" />
+
+    <TextView
+        android:id="@+id/exercise_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginStart="@dimen/little_margin"
+        android:layout_marginLeft="@dimen/little_margin"
+        app:layout_constraintLeft_toRightOf="@id/exercise_weight_icon"
+        app:layout_constraintRight_toLeftOf="@id/exercise_rest_icon"
+        app:layout_constraintTop_toTopOf="@id/exercise_rest_icon"
+        app:layout_constraintBottom_toBottomOf="@id/exercise_rest_icon" />
+
+    <ImageView
+        android:id="@+id/exercise_rest_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_time"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        app:tint="@color/colorAccent2"
+        android:contentDescription="@string/content_rest"
+        app:layout_constraintLeft_toRightOf="@id/exercise_rest"
+        app:layout_constraintTop_toBottomOf="@id/exercise_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

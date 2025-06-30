@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+    android:paddingStart="?android:attr/expandableListPreferredItemPaddingLeft"
+    android:paddingRight="?android:attr/expandableListPreferredItemPaddingLeft"
+    android:paddingEnd="?android:attr/expandableListPreferredItemPaddingLeft"
+    android:paddingBottom="@dimen/little_margin"
+    android:paddingTop="@dimen/little_margin"
+    android:background="?android:windowBackground">
+
+    <ImageView
+        android:id="@+id/exercise_group_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/content_rest"
+        app:tint="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/exercise_group_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:paddingStart="@dimen/little_margin"
+        android:paddingLeft="@dimen/little_margin"
+        android:paddingEnd="@dimen/little_margin"
+        android:paddingRight="@dimen/little_margin"
+        android:textSize="20sp"/>
+</LinearLayout>

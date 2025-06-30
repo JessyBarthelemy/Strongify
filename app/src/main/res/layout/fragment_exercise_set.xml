@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragment.ExerciseSetFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/back_action"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_go_back"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            app:tint="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/exercise_set_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exercise_set_no_data"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+        <TextView
+            android:id="@+id/exercise_set_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_toRightOf="@id/back_action"
+            android:layout_toEndOf="@id/back_action"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:gravity="center_horizontal"/>
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_below="@id/exercise_set_title"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/exercise_set_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layoutAnimation="@anim/layout_animation_swipe"
+
+                android:layout_weight="1">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/ok"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/close"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                style="@style/Button"/>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_add"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            app:pressedTranslationZ="0dp"/>
+    </RelativeLayout>
+
+    <com.jessy_barthelemy.strongify.customLayout.TutorialLayout
+        android:id="@+id/tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:alpha="0.9"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tutorial_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/tutorial_set_title"
+            android:textSize="35sp"/>
+        <TextView
+            android:layout_marginTop="@dimen/little_margin"
+            android:layout_below="@id/tutorial_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/tutorial_set"
+            android:textSize="20sp"/>
+    </com.jessy_barthelemy.strongify.customLayout.TutorialLayout>
+</FrameLayout>
